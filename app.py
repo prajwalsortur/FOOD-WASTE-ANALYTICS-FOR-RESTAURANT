@@ -74,7 +74,7 @@ def call_llm(question: str, summary: dict) -> str:
 
 
 # ---------- Load & filter ----------
-df = load_data(DATA_PATH)
+df = load_data("waste_data.csv")
 
 st.sidebar.header("Filters")
 date_min, date_max = df["date"].min().date(), df["date"].max().date()
